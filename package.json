@@ -1,0 +1,19 @@
+{
+	"name"          : "wechat-simulator",
+    "description"   : "To help you to build a wechat simulator for wechat developing.",
+	"main"          : "windows/login.html",
+    "version"       : "0.0.1",
+
+    "window"        : {
+        "frame"     : false,
+        "toolbar"   : false,
+        "position"  : "center",
+        "resizable" : false,
+
+        "width"     : 300,
+        "height"    : 450,
+
+        "icon"      : "assets/icon.png",
+        "show"      : false
+    }
+}

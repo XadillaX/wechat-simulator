@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wechat Simulator</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Devonshire' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../utils/bootstrap-3.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../utils/bootstrap-3.0.0/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/common.css" />
+    <link rel="stylesheet" type="text/css" href="../style/login.css" />
+
+    <script type="text/javascript" src="../utils/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../utils/bootstrap-3.0.0/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../script/login.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="top-titlebar">
+        <div class="top-titlebar-icon">
+            <img id="top-titlebar-icon" src="../assets/icon.png" style="width: 16px; height: 16px;" />
+        </div>
+        <div class="top-titlebar-text">
+            Wechat Simulator
+        </div>
+        <div class="top-titlebar-close-button">
+            <img id="top-titlebar-close-button" src="../assets/button_close.png" />
+        </div>
+    </div>
+    <div class="top-titlebar-divider">
+    </div>
+    <div class="container" style="margin-top: 32px;">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4" style="text-align: center">
+                <img style="height: 64px; width: 64px;" class="img-thumbnail" src="../assets/avatar.gif" />
+            </div>
+            <div class="col-xs-4"></div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+            <form id="login-form" role="form" class="col-xs-12" onsubmit="return login();">
+                <div class="form-group">
+                    <label class="sr-only" for="srvaddress">服务端地址</label>
+                    <input value="http://localhost:3001/" type="text" class="form-control" id="srvaddress" placeholder="服务端地址">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="token">Token</label>
+                    <input value="kacakacaANDkacakaca" type="text" class="form-control" id="token" placeholder="Token">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="openid">OpenID</label>
+                    <input value="WechatSimulator" type="text" class="form-control" id="openid" placeholder="OpenID">
+                </div>
+                <div class="form-group" style="text-align: center;">
+                    <button type="submit" class="btn btn-success form-control">登 录</button>
+                    <button type="button" style="margin-top: 40px;" class="btn btn-default">项目主页</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

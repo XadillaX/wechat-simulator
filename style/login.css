@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Kite One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Devonshire-Regular'), url("../assets/kiteone.woff") format('woff');
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+body {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+input, img, button {
+    -webkit-app-region: no-drag;
+}
+
+form {
+    font-family: "微软雅黑";
+}
+
+input {
+    font-family: 'Kite One' !important
+    font-size: 12px;
+}
